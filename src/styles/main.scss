@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+
+#home {
+  background-image: url(../images/home-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 450px;
+}
+
+.snow-bg {
+  background-image: url(../images/1-bg.png);
+  height: 450px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  opacity: 20%;
+}
+
+.nav-link {
+  font-family: "Lato", sans-serif;
+  text-decoration-line: underline;
+  font-weight: 600;
+  font-style: italic;
+  color: white;
+}
+
+.navbar-brand {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.navbar,
+.la-brand {
+  transition: all 1s;
+}
+
+.navbar-scrolled {
+  background-color: #ffffff;
+}
+
+/* ------------history----------- */
+
+#history {
+  min-height: 450px;
+  width: 100%;
+  background-image: url(../images/history-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.img-history {
+  margin: 0 -10px 0;
+}
+
+.history-p {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+#carousel {
+  width: 250px;
+}
+
+.carousel-bg {
+  background-color: rgb(56, 68, 91, 0.8);
+  min-height: 170px;
+}
+
+/* ------------team----------- */
+
+.img-climb {
+  width: 80px;
+  margin: 0 -10px 0;
+}
+
+.team-bg {
+  background-image: url(../images/team-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 400px;
+}
+
+.schedule-container {
+  padding: 25px;
+  min-height: 100px;
+  background-color: rgb(243, 246, 248, 0.8);
+  max-width: 400px;
+}
+
+#mountains-bar {
+  background-color: #414f6b;
+  color: #b0b4be;
+  font-family: "Oswald", sans-serif;
+  height: 50px;
+}
+
+.mountain-btn {
+  cursor: pointer;
+  color: #b0b4be;
+  text-decoration: none;
+}
+
+.mountain-btn:hover {
+  text-decoration-line: underline;
+  color: #414f6b;
+  padding: 13px;
+  text-align: center;
+  background-color: #b0b4be;
+}
+
+/* ------------Footer----------- */
+
+.footer-container {
+  min-height: 100px;
+  background-color: #414f6b;
+}
+
+.footer-text {
+  color: #63769d;
+  font-weight: 500;
+}
+
+/* ------------BREAKPOINTS----------- */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .footer-text,
+  .footer-images {
+    padding: 0 20px 0;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .footer-text,
+  .footer-images {
+    padding: 0 70px 0;
+  }
+  .carousel-bg {
+    margin-top: 40px !important;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #home,
+  #history,
+  #team,
+  .team-bg {
+    min-height: 700px;
+  }
+  .footer-text,
+  .footer-images {
+    padding: 0 100px 0;
+  }
+  #history-section {
+    padding: 70px 170px 0 !important;
+  }
+  .schedule-container {
+    text-align: left;
+  }
+  #carousel {
+    width: 300px;
+  }
+  .carousel-bg {
+    min-height: 200px;
+    margin-top: 280px !important;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #history-section {
+    padding: 70px 250px 0 !important;
+  }
+  .carousel-bg {
+    margin-top: 350px !important;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  #history-section {
+    padding: 50px 350px 0 !important;
+  }
+}
+
+/* AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA */
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .footer-text,
+  .footer-images {
+    padding: 0 8px 0;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .collapse,
+  .ms-auto {
+    text-align: right;
+    font-size: 2rem;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+}
